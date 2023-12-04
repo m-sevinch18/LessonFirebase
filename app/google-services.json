@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "483537270392",
+    "project_id": "lessonfirebase-d058b",
+    "storage_bucket": "lessonfirebase-d058b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483537270392:android:dd7b956ff4ee68e61c5f8d",
+        "android_client_info": {
+          "package_name": "uz.itschool.lessonfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM3FPMtluMEOw3X3z0-Ixt9tg_AyYb8LI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

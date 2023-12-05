@@ -48,7 +48,7 @@ fun SignInScreen(navController: NavController) {
         onAuthComplete = { result ->
             user = result.user
             // Navigate to the ShowScreen and pass the user's name as an argument
-            navController.navigate("showScreen/${user?.displayName}")
+            navController.navigate("show_screen"+"${user?.displayName}")
         },
         onAuthError = {
             user = null
@@ -59,7 +59,7 @@ fun SignInScreen(navController: NavController) {
     val context = LocalContext.current
     Column (modifier= Modifier.padding(50.dp)){
         if (user == null) {
-            Text("Not logged in")
+
             Image(
                 painter = painterResource(id = R.drawable.ic_google),
                 contentDescription = "ic_google",
@@ -79,7 +79,7 @@ fun SignInScreen(navController: NavController) {
                         launcher.launch(googleSignInClient.signInIntent)
                     }
             )
-            Text("Sign in via Google")
+
 
         } else {
             Text("Welcome ${user!!.displayName}")
